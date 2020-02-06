@@ -1,0 +1,23 @@
+input, textarea {
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid $color-light;
+    color: $color-light;
+}
+
+textarea {
+    height: 200px;
+}
+
+input::placeholder, textarea::placeholder {
+   color: $color-light;
+}
+
+input:focus, textarea:focus {
+    background: $color-light;
+    border: none;
+    color: $paragraph-color;
+    outline: none;  //doczytac
+}

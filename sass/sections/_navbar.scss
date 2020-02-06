@@ -1,0 +1,22 @@
+.section__navbar {
+  margin: 0 0;
+  padding: 0 0;
+  background: $color-white;
+
+  .container {
+    margin: 0 0;
+    padding: 0 0;
+    max-width: 1500px;
+  }
+}
+
+.navbar {
+  justify-content: flex-end;
+  padding: 0 0;
+}
+
+.navbar div {
+  justify-content: flex-end;
+  border-left: solid 1px $color-light;
+  border-right: solid 1px $color-light;
+}

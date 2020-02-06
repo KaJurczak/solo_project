@@ -1,0 +1,14 @@
+a {
+  color: $paragraph-color;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: $font-bold;
+    cursor: pointer;
+    transition: $transition;
+  }
+}
+
+i {
+  padding-right: 10px;
+}
