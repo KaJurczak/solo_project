@@ -2,17 +2,19 @@
 @import 'mixins';
 
 @import 'normalize';
+@import 'global';
 @import 'layout';
-@import 'mainPage';
 
 /* Components */
 @import 'components/titles';
-@import 'components/form-field';
+@import 'components/inputs';
 @import 'components/icon-text';
+@import 'components/section-part';
 
 /* Sections */
 @import 'sections/sidebar';
-@import 'sections/navbar';
+@import 'sections/topbar';
+@import 'sections/general-statistic';
 // @import 'section/registration_form';
 
 /* Pages / Views */

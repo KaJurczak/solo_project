@@ -347,7 +347,7 @@ template {
 
 body {
   margin: 0 auto;
-  padding: 0 0;
+  padding: 0 30px;
   background: #dfe6e9;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -470,6 +470,13 @@ i {
   padding-right: 10px;
 }
 
+.component__section-part {
+  border-bottom: 1px solid #dfe6e9;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+}
+
 /* Sections */
 .section__sidebar {
   height: 100vh;
@@ -480,31 +487,55 @@ i {
 
 .section__sidebar .container {
   background: #333;
+  padding: 20px 20px;
 }
 
-.section__navbar {
+.logo {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-link i {
+  color: #dfe6e9;
+  padding-left: 20px;
+}
+
+.list li i, .list li a {
+  color: #dfe6e9;
+}
+
+.section__topbar {
   margin: 0 0;
   padding: 0 0;
   background: #FFFFFF;
 }
 
-.section__navbar .container {
+.section__topbar .container {
   margin: 0 0;
   padding: 0 0;
   max-width: 1500px;
 }
 
-.navbar {
+.topbar {
   -ms-flex-pack: end;
       justify-content: flex-end;
   padding: 0 0;
+  height: 50px;
 }
 
-.navbar div {
+.topbar div {
   -ms-flex-pack: end;
       justify-content: flex-end;
   border-left: solid 1px #dfe6e9;
   border-right: solid 1px #dfe6e9;
+}
+
+.price, .notification, .profile, .exit {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
 }
 
 /* Pages / Views */

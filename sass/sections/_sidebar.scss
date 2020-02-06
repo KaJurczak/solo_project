@@ -6,5 +6,20 @@
 
   .container {
     background: $color-dark;
+    padding: 20px 20px;
   }
+}
+
+.logo {
+  display: flex;
+
+}
+
+.logo-link i {
+  color: $color-light;
+  padding-left: 20px;
+}
+
+.list li i, .list li a {
+  color: $color-light;
 }

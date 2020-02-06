@@ -1,4 +1,4 @@
-.section__navbar {
+.section__topbar {
   margin: 0 0;
   padding: 0 0;
   background: $color-white;
@@ -10,13 +10,20 @@
   }
 }
 
-.navbar {
+.topbar {
   justify-content: flex-end;
   padding: 0 0;
+  height: 50px;
 }
 
-.navbar div {
+.topbar div {
   justify-content: flex-end;
   border-left: solid 1px $color-light;
   border-right: solid 1px $color-light;
+}
+
+.price, .notification, .profile, .exit {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }

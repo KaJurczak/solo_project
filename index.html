@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="images/icons/icon-font/css/Glyphter.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">  pozwala tworzyc layout dostosowany do mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- pozwala tworzyc layout dostosowany do mobile-->
   </head>
 
   <body>
@@ -18,7 +18,12 @@
         <section class="section__sidebar col-md-2">
           <div class="container">
             <div class="list">
-              <h1> Just do it </h1>
+              <div class="logo">
+                <h2 class="logo-text"> Just do it </h2>
+                <a  class="logo-link" href="#">
+                  <i class="fas fa-bars"></i>
+                </a>
+              </div>
               <ul>
                 <li class="component__icon-text">
                   <a class="link" href="#general">
@@ -73,35 +78,52 @@
             </div>
           </div>
         </section>
+
         <div class="main-page col-md-10">
-          <section class="section__navbar">
+          <header class="section__topbar">
             <div class="container">
-              <div class="navbar row">
-                <div class="col-md-1">
-                  <p> NAVBAR</p>
+              <div class="topbar row">
+                <div class="col-md-2 price">
+                  <a class="link" href="#">
+                    <i class="icon icon-wallet"></i>
+                    $1,500.00
+                    <i class="icon icon-arrow-down"></i>
+                  </a>
                 </div>
-                <div class="col-md-2">
-                  <p> NAVBAR</p>
+                <div class="col-md-1 notification">
+                  <a class="link" href="#">
+                    <i class="icon icon-notification"></i>
+                  </a>
                 </div>
-                <div class="col-md-1">
-                  <p> NAVBAR</p>
+                <div class="col-md-2 profile">
+                  <a class="link" href="#">
+                    <i class="icon icon-wallet"></i>
+                    Leonardo Dicaprio
+                  </a>
                 </div>
-                <div class="col-md-2">
-                  <p> NAVBAR</p>
+                <div class="col-md-1 exit">
+                  <a class="link" href="#">
+                    <i class="icon icon-quit"></i>
+                  </a>
                 </div>
               </div>
             </div>
-          </section>
+          </header>
+
           <section class="section__general-statistic">
             <div class="container">
               <div class="component__title">
                 <h3> GENERAL STATISTIC </h3>
               </div>
-              <div class="section-part"> OTHER ANOTHER
-                <form class="component__form-field">
-                  <input type="text" placeholder="Your name">
-                  <input type="text" placeholder="Your name">
-                </form>
+              <div class="component__section-part calendar">
+                <form class="component__calendar">
+                   <div class="calendar input-wrapper">
+                     <input class="calendar input" type="date" value="2016-05-16">
+                     <input class="calendar input" type="date" value="2016-05-16">
+                     <div class="calendar icon-wrapper"><i class="icon icon-calendar"></i></div>
+                   </div>
+                   <a class="calendar btn btn-refresh"><i class="icon-refresh"></i></a>
+                 </form>
               </div>
               <div class="section-part"> TABLE
               </div>
