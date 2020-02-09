@@ -1,31 +1,47 @@
 .section__topbar {
-  // position: fixed;
+  position: fixed;
+  display: inline-flex;
   margin: 0 0;
   padding: 0 0;
   background: $color-white;
+  width: 100%;
 
   .container {
     margin: 0 0;
     padding: 0 0;
-    max-width: 1500px;
+    // max-width: 1500px;
     box-shadow: none;
   }
 }
 
 .topbar {
+  // display: inline-flex;
   justify-content: flex-end;
   padding: 0 0;
-  height: 50px;
-}
-
-.topbar div {
-  justify-content: flex-end;
-  border-left: solid 1px $color-light;
-  border-right: solid 1px $color-light;
+  height: 60px;
+  color: $color-light;
 }
 
 .price, .notification, .profile, .exit {
+  border-left: solid 1px $color-light;
+  border-right: solid 1px $color-light;
+  // align-items: center;
+  // text-align: center;
   display: flex;
-  align-items: center;
-  text-align: center;
+}
+
+.link {
+  display: flex;
+  color: $color-dark;
+  font-size: $font-size*1.2;
+  // align-items: center;
+  // text-align: center;
+}
+
+.price p {
+  font-size: $font-size*1.4;
+}
+
+.profile p {
+  color: $color-blue;
 }

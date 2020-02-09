@@ -13,6 +13,10 @@
     display: none;
   }
 
+  &:hover {
+    background: $color-light;
+  }
+
   &:hover .table-font {
     display: inline;
   }

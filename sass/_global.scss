@@ -4,7 +4,7 @@
 
 body {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
   // max-width: 1140px;
   background: $color-light;
   font-family: $paragraph-font;
@@ -15,15 +15,11 @@ body {
 }
 
 .container {
-  max-width: 1000px;
-  margin: 10px auto;
+  // max-width: 800px;
+  margin: 20px auto;
   padding: 20px 0;
   background: $color-white;
   box-shadow: 2px 2px 5px;
-}
-
-section {
-  // box-shadow: 2px 2px 2px 2px $color-dark;
 }
 
 h1 {
@@ -56,11 +52,11 @@ h5 {
 p {
   font-size: 12px;
   font-weight: $font-normal;
-  text-transform: uppercase;
 }
 
 ul {
   font-size: $paragraph-font-size;
+  padding-inline-start: 0;
 
   li {
     display: block;

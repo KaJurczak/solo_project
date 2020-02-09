@@ -1,22 +1,30 @@
+.section__general-statistic {
+  margin-top: 80px;
+}
+
 /* calendar */
 
 .component__calendar {
   display: inline-flex;
+  padding-left: 60px;
 }
 
 .calendar .input-wrapper {
-  height: 40px;
+  height: 45px;
   display: flex;
   padding: 5px;
   border: 1px solid $color-light;
   border-radius: 5px;
-  margin: 30px 0;
+  margin: 25px 0;
+  align-items: center;
+  text-align: center;
 
   input {
     border: 1px solid $color-light;
-    height: 20px;
-    padding-left: 10px;
-    width: 130px;
+    height: 15px;
+    width: 140px;
+    font-size: $font-size*1.1;
+    color: $color-dark;
 
     &:first-of-type {
       border-width: 0 1px 0 0;
@@ -31,43 +39,42 @@
 .calendar .icon-wrapper {
   flex: 1;
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 
   i {
     position: absolute;
     top: 50%;
-    right: 5px;
+    right: 10px;
     transform: translateY(-50%);
+    padding: 0;
   }
 }
 
 .calendar .btn-refresh  {
   margin-left: 0;
-  margin-top: 15px;
   height: 40px;
   width: 40px;
+  padding-top: 10px;
 
   i {
-    align-items: center;
-    text-align: center;
-    padding: 10px 0;
     color: $color-white;
   }
 }
 
 .component__calendar .btn {
-  margin: 30px 30px;
+  margin: 25px 15px;
 }
 
 /* number - chart */
 
 .component__numbers .numbers-list {
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 70%;
+  max-width: 60%;
   padding-left: 0;
+  padding-top: 20px;
 }
 
 .component__numbers .item {
@@ -79,19 +86,19 @@
   align-items: center;
   text-align: right;
   border-bottom: 1px solid $color-light;
-  // width: 300px;
+  padding: 5px;
 }
 
 .chart {
-  max-width: 70%;
-  margin: 60px auto 0 auto;
+  max-width: 60%;
+  margin: 55px auto 0 auto;
 
   h4 {
     text-align: left;
   }
 
   img {
-    margin: 40px 0;
+    margin: 30px 0;
     width: 100%;
   }
 }
@@ -108,20 +115,3 @@
   text-align: center;
   margin: 40px 0;
 }
-
-// /* Media */
-// @media (max-width: 767px) {
-//   .links__table {
-//     text-align: center;
-//     margin: 0;
-//   }
-//
-//   .links__table-row {
-//     display: flex;
-//     flex-direction: column;
-//   }
-//
-//   .links__table-element {
-//     min-height: 30px;
-//   }
-// }
