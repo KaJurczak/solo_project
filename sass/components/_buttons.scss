@@ -1,0 +1,10 @@
+.btn {
+  background: $brand-main-color;
+  border-color: $brand-main-color;
+
+  &:hover {
+    background: $brand-main-color;
+    border-color: $brand-main-color;
+    color: $color-black;
+  }
+}

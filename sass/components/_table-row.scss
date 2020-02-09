@@ -1,0 +1,23 @@
+.component__table-row {
+  border-bottom: 1px solid $color-light;
+
+  &:first-of-type {
+    border-top: 1px solid $color-light;
+  }
+
+  .table-text {
+    padding-top: 10px;
+  }
+
+  .table-font {
+    display: none;
+  }
+
+  &:hover .table-font {
+    display: inline;
+  }
+}
+
+.links-table {
+  width: 100%;
+}

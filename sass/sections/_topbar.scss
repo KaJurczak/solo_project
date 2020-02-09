@@ -1,4 +1,5 @@
 .section__topbar {
+  // position: fixed;
   margin: 0 0;
   padding: 0 0;
   background: $color-white;
@@ -7,6 +8,7 @@
     margin: 0 0;
     padding: 0 0;
     max-width: 1500px;
+    box-shadow: none;
   }
 }
 

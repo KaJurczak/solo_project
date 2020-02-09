@@ -1,18 +1,19 @@
 .section__sidebar {
+  position: fixed;
   height: 100vh;
-  background: $color-dark;
+  background: $color-black;
   color: $color-light;
   padding: 0 0;
 
   .container {
-    background: $color-dark;
+    background: $color-black;
     padding: 20px 20px;
+    box-shadow: none;
   }
 }
 
 .logo {
   display: flex;
-
 }
 
 .logo-link i {

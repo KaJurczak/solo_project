@@ -1,9 +1,10 @@
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
-$color-light: #dfe6e9;
-$color-dark: #333;
+$color-black: #000000;
+$brand-main-color: #e67e22;
+$color-light: #ecf0f1;
+$color-dark: #95a5a6;
 $color-white: #FFFFFF;
+$color-blue: #2980b9;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
@@ -16,6 +17,8 @@ $font-light: 300;
 $font-normal: 400;
 $font-semibold: 500;
 $font-bold: 700;
+
+$font-size: 14px;
 
 /* other */
 $transition: all .2s;
