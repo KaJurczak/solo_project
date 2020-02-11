@@ -30,12 +30,13 @@
   display: flex;
 }
 
-.link {
+.topbar .link {
   display: flex;
   color: $color-dark;
   font-size: $font-size*1.2;
-  // align-items: center;
-  // text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .price p {

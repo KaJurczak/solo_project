@@ -348,6 +348,7 @@ template {
 body {
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 1140px;
   background: #ecf0f1;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -503,10 +504,6 @@ i {
   display: inline;
 }
 
-.links-table {
-  width: 100%;
-}
-
 .btn {
   background: #e67e22;
   border-color: #e67e22;
@@ -572,7 +569,7 @@ i {
 }
 
 .component__icon-text {
-  padding: 12px 0 10px;
+  padding: 10px 0 5px;
 }
 
 .component__icon-text:hover {
@@ -655,11 +652,16 @@ i {
   display: flex;
 }
 
-.link {
+.topbar .link {
   display: -ms-flexbox;
   display: flex;
   color: #636e72;
   font-size: 16.8px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
 }
 
 .price p {
@@ -768,6 +770,11 @@ i {
   padding: 5px;
 }
 
+.inner-wrapper input {
+  border-collapse: collapse;
+  border: 0 solid #ecf0f1;
+}
+
 .chart {
   max-width: 60%;
   margin: 55px auto 0 auto;
@@ -782,10 +789,25 @@ i {
   width: 100%;
 }
 
+.scroll-wrapper {
+  display: block;
+  width: 70%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper img {
+  width: auto;
+  max-width: 100%;
+}
+
 /* Links */
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}
+
 .table-wrapper {
   margin: 40px auto;
-  width: 70%;
   padding: 5px;
 }
 
