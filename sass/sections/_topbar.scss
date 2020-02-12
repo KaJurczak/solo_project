@@ -1,25 +1,25 @@
 .section__topbar {
   position: fixed;
-  display: inline-flex;
+  // display: inline-flex;
   margin: 0 0;
   padding: 0 0;
   background: $color-white;
-  width: 100%;
+  width: 100vw;
+  max-width: 1200px;
 
   .container {
     margin: 0 0;
     padding: 0 0;
-    // max-width: 1500px;
+    // max-width: 1200px;
     box-shadow: none;
   }
-}
 
-.topbar {
-  // display: inline-flex;
-  justify-content: flex-end;
-  padding: 0 0;
-  height: 60px;
-  color: $color-light;
+  .topbar {
+    justify-content: flex-end;
+    padding: 0 0;
+    height: 60px;
+    color: $color-light;
+  }
 }
 
 .price, .notification, .profile, .exit {
@@ -27,6 +27,7 @@
   border-right: solid 1px $color-light;
   // align-items: center;
   // text-align: center;
+  // justify-content: space-between;
   display: flex;
 }
 
@@ -34,9 +35,17 @@
   display: flex;
   color: $color-dark;
   font-size: $font-size*1.2;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  i {
+    padding: 0 10px;
+  }
 }
 
 .price p {

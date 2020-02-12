@@ -86,19 +86,26 @@
   }
 }
 
+.section__topbar-at-sidebar {
+  // justify-content: space-between;
+
+  .topbar {
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 767px) {
   .section__sidebar {
     width: 100%;
     height: auto;
   }
 
-  .navigation, .manager {
+  .navigation, .manager, .section__topbar-at-sidebar {
     display: none;
   }
 
-  .logo:hover {
-    ~.navigation {
-      display: inline;
-    }
+  .show {
+    display: inline;
+    z-index: 10;
   }
 }

@@ -9,8 +9,16 @@
     padding-top: 10px;
   }
 
+  .table-link {
+    position: absolute;
+    left: 45%;
+    transform: translateY(30%);
+  }
+
   .table-font {
     display: none;
+    float: right;
+    margin-top: 5px;
   }
 
   &:hover {
@@ -24,4 +32,16 @@
 
 // .links-table {
 //   width: 100%;
+// }
+
+@media (min-width: 768px) {
+  .component__table-row .table-link {
+    left: 55%;
+  }
+}
+
+// @media (min-width: 992px) {
+//   .component__table-row .table-link {
+//     left: 65%;
+//   }
 // }
