@@ -598,9 +598,9 @@ template {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0 0;
   padding: 0 20px;
-  max-width: 1200px;
+  max-width: 1250px;
   background: #ecf0f1;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -611,9 +611,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1170px;
-  margin: 20px auto;
-  padding: 20px 15px;
+  max-width: 1230px;
+  margin: 20px 20px;
+  padding: 20px 0;
   background: #FFFFFF;
   box-shadow: 2px 2px 5px;
 }
@@ -760,6 +760,7 @@ i {
 
 .component__table-row {
   border-bottom: 1px solid #ecf0f1;
+  height: 58px;
 }
 
 .component__table-row:first-of-type {
@@ -767,19 +768,22 @@ i {
 }
 
 .component__table-row .table-text {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
 .component__table-row .table-link {
-  position: absolute;
-  left: 45%;
-  transform: translateY(30%);
+  width: 30%;
+}
+
+.component__table-row .table-link a {
+  font-size: 15.4px;
 }
 
 .component__table-row .table-font {
-  display: none;
   float: right;
-  margin-top: 5px;
+  margin-top: 10px;
+  opacity: 0;
 }
 
 .component__table-row:hover {
@@ -788,12 +792,7 @@ i {
 
 .component__table-row:hover .table-font {
   display: inline;
-}
-
-@media (min-width: 768px) {
-  .component__table-row .table-link {
-    left: 55%;
-  }
+  opacity: 1;
 }
 
 .btn {
@@ -815,6 +814,7 @@ i {
   background: #000000;
   color: #636e72;
   padding: 0 0;
+  z-index: 10;
 }
 
 .section__sidebar .container {
@@ -822,16 +822,20 @@ i {
   padding: 10px 0;
   box-shadow: none;
   margin: 0 auto;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
 }
 
 .logo {
   display: -ms-flexbox;
   display: flex;
   color: #ecf0f1;
-  padding-left: 30px;
   -ms-flex-align: center;
       align-items: center;
   text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .logo h2 {
@@ -857,24 +861,61 @@ i {
 
 .list li a {
   padding-left: 20px;
-  font-size: 12.6px;
 }
 
-.component__icon-text {
-  padding: 10px 0 5px;
+.component__icon-text, .manager-name,
+.section__topbar-at-sidebar .price,
+.section__topbar-at-sidebar .profile,
+.section__topbar-at-sidebar .notification,
+.section__topbar-at-sidebar .exit {
+  padding: 10px 30% 5px;
+  text-align: left;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 
-.component__icon-text:hover {
+.component__icon-text i, .component__icon-text a, .component__icon-text p, .manager-name i, .manager-name a, .manager-name p,
+.section__topbar-at-sidebar .price i,
+.section__topbar-at-sidebar .price a,
+.section__topbar-at-sidebar .price p,
+.section__topbar-at-sidebar .profile i,
+.section__topbar-at-sidebar .profile a,
+.section__topbar-at-sidebar .profile p,
+.section__topbar-at-sidebar .notification i,
+.section__topbar-at-sidebar .notification a,
+.section__topbar-at-sidebar .notification p,
+.section__topbar-at-sidebar .exit i,
+.section__topbar-at-sidebar .exit a,
+.section__topbar-at-sidebar .exit p {
+  font-size: 16.8px;
+  color: #636e72;
+}
+
+.component__icon-text:hover, .manager-name:hover,
+.section__topbar-at-sidebar .price:hover,
+.section__topbar-at-sidebar .profile:hover,
+.section__topbar-at-sidebar .notification:hover,
+.section__topbar-at-sidebar .exit:hover {
   background: #2d3436;
   border-left: 5px solid #e67e22;
 }
 
-.component__icon-text:hover i, .component__icon-text:hover a {
+.component__icon-text:hover i, .component__icon-text:hover a, .component__icon-text:hover p, .manager-name:hover i, .manager-name:hover a, .manager-name:hover p,
+.section__topbar-at-sidebar .price:hover i,
+.section__topbar-at-sidebar .price:hover a,
+.section__topbar-at-sidebar .price:hover p,
+.section__topbar-at-sidebar .profile:hover i,
+.section__topbar-at-sidebar .profile:hover a,
+.section__topbar-at-sidebar .profile:hover p,
+.section__topbar-at-sidebar .notification:hover i,
+.section__topbar-at-sidebar .notification:hover a,
+.section__topbar-at-sidebar .notification:hover p,
+.section__topbar-at-sidebar .exit:hover i,
+.section__topbar-at-sidebar .exit:hover a,
+.section__topbar-at-sidebar .exit:hover p {
   color: #ecf0f1;
-}
-
-.component__icon-text:hover a {
-  padding-left: 15px;
+  font-size: 16.8px;
+  transition: all 0.2s;
 }
 
 .manager {
@@ -889,6 +930,8 @@ i {
       align-items: center;
   text-align: center;
   padding-top: 5px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .manager img {
@@ -898,6 +941,10 @@ i {
 
 .manager .manager-text {
   padding-left: 10px;
+}
+
+.section__topbar-at-sidebar .container {
+  margin-top: 30px;
 }
 
 .section__topbar-at-sidebar .topbar {
@@ -910,12 +957,69 @@ i {
     width: 100%;
     height: auto;
   }
-  .navigation, .manager, .section__topbar-at-sidebar {
+  .section__sidebar .navigation, .section__sidebar .manager, .section__sidebar .section__topbar-at-sidebar {
     display: none;
   }
-  .show {
+  .section__sidebar .show {
     display: inline;
     z-index: 10;
+  }
+  .section__topbar-at-sidebar .price, .section__topbar-at-sidebar .profile, .section__topbar-at-sidebar .notification, .section__topbar-at-sidebar .exit {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .section__sidebar .container {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    text-align: left;
+  }
+  .section__sidebar .manager .manager-name {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .section__sidebar .container {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    text-align: left;
+  }
+  .component__icon-text, .manager-name,
+  .section__topbar-at-sidebar .price,
+  .section__topbar-at-sidebar .profile,
+  .section__topbar-at-sidebar .notification,
+  .section__topbar-at-sidebar .exit {
+    padding: 10px 10px 5px 0;
+  }
+  .component__icon-text i, .component__icon-text a, .component__icon-text p, .manager-name i, .manager-name a, .manager-name p,
+  .section__topbar-at-sidebar .price i,
+  .section__topbar-at-sidebar .price a,
+  .section__topbar-at-sidebar .price p,
+  .section__topbar-at-sidebar .profile i,
+  .section__topbar-at-sidebar .profile a,
+  .section__topbar-at-sidebar .profile p,
+  .section__topbar-at-sidebar .notification i,
+  .section__topbar-at-sidebar .notification a,
+  .section__topbar-at-sidebar .notification p,
+  .section__topbar-at-sidebar .exit i,
+  .section__topbar-at-sidebar .exit a,
+  .section__topbar-at-sidebar .exit p {
+    font-size: 12.6px;
+  }
+  .component__icon-text:hover i, .component__icon-text:hover a, .component__icon-text:hover p, .manager-name:hover i, .manager-name:hover a, .manager-name:hover p,
+  .section__topbar-at-sidebar .price:hover i,
+  .section__topbar-at-sidebar .price:hover a,
+  .section__topbar-at-sidebar .price:hover p,
+  .section__topbar-at-sidebar .profile:hover i,
+  .section__topbar-at-sidebar .profile:hover a,
+  .section__topbar-at-sidebar .profile:hover p,
+  .section__topbar-at-sidebar .notification:hover i,
+  .section__topbar-at-sidebar .notification:hover a,
+  .section__topbar-at-sidebar .notification:hover p,
+  .section__topbar-at-sidebar .exit:hover i,
+  .section__topbar-at-sidebar .exit:hover a,
+  .section__topbar-at-sidebar .exit:hover p {
+    font-size: 15.4px;
   }
 }
 
@@ -924,22 +1028,33 @@ i {
   margin: 0 0;
   padding: 0 0;
   background: #FFFFFF;
-  width: 100vw;
-  max-width: 1200px;
+  width: calc(100vw - 10px);
+  max-width: 1280px;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
 .section__topbar .container {
   margin: 0 0;
   padding: 0 0;
   box-shadow: none;
+  max-width: 1280px;
 }
 
 .section__topbar .topbar {
   -ms-flex-pack: end;
       justify-content: flex-end;
-  padding: 0 0;
   height: 60px;
   color: #ecf0f1;
+}
+
+.price, .profile {
+  width: 14%;
+}
+
+.notification, .exit {
+  width: 5%;
 }
 
 .price, .notification, .profile, .exit {
@@ -947,6 +1062,8 @@ i {
   border-right: solid 1px #ecf0f1;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .topbar .link {
@@ -983,7 +1100,6 @@ i {
 .component__calendar {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-left: 60px;
 }
 
 .calendar .input-wrapper {
@@ -999,7 +1115,7 @@ i {
   text-align: center;
 }
 
-.calendar .input-wrapper input {
+.calendar .input-wrapper input[type="date"] {
   border: 1px solid #ecf0f1;
   height: 15px;
   font-size: 14px;
@@ -1007,12 +1123,12 @@ i {
   padding-right: 0;
 }
 
-.calendar .input-wrapper input:first-of-type {
+.calendar .input-wrapper input[type="date"]:first-of-type {
   border-width: 0 1px 0 0;
   width: 140px;
 }
 
-.calendar .input-wrapper input:last-of-type {
+.calendar .input-wrapper input[type="date"]:last-of-type {
   border: 0;
   width: 120px;
 }
@@ -1035,7 +1151,7 @@ i {
 }
 
 .calendar .btn-refresh {
-  margin-left: 0;
+  margin: 25px 0 25px 10px;
   height: 40px;
   width: 40px;
   padding-top: 10px;
@@ -1045,25 +1161,22 @@ i {
   color: #FFFFFF;
 }
 
-.component__calendar .btn {
-  margin: 25px 15px;
-}
-
 /* number - chart */
 .component__numbers .numbers-list {
-  margin: 10px auto;
+  margin: 15px auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 70%;
+  max-width: 75%;
   padding-left: 0;
   padding-top: 20px;
 }
 
 .component__numbers .item {
   width: 100%;
-  margin: 0 20px;
+  height: 45px;
+  margin: 0 10px 0 55px;
 }
 
 .numbers-list .inner {
@@ -1089,8 +1202,9 @@ i {
 }
 
 .chart {
-  max-width: 60%;
-  margin: 55px auto 0 auto;
+  width: 100%;
+  max-width: 65%;
+  margin: 60px auto 0 auto;
 }
 
 .chart h4 {
@@ -1098,23 +1212,17 @@ i {
 }
 
 .chart img {
-  margin: 30px 0;
+  margin: 30px 0 20px;
   width: 100%;
 }
 
-.scroll-wrapper {
+/* Links */
+.section__links .scroll-wrapper {
   display: block;
-  width: 70%;
   overflow-x: auto;
 }
 
-.scroll-wrapper img {
-  width: auto;
-  max-width: 100%;
-}
-
-/* Links */
-.scroll-wrapper table {
+.section__links .scroll-wrapper table {
   width: 100%;
   max-width: 100%;
 }
@@ -1127,7 +1235,11 @@ i {
 
 .section__links .button-wrapper {
   text-align: center;
-  margin: 40px 0;
+  margin: 20px 0 20px;
+}
+
+.section__links .button-wrapper .btn {
+  width: 120px;
 }
 
 @media (min-width: 992px) {
@@ -1135,9 +1247,7 @@ i {
     width: 40%;
   }
   .table-wrapper {
-    margin: 40px auto;
-    width: 70%;
-    padding: 5px;
+    width: 65%;
   }
 }
 

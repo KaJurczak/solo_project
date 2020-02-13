@@ -4,31 +4,39 @@
   margin: 0 0;
   padding: 0 0;
   background: $color-white;
-  width: 100vw;
-  max-width: 1200px;
+  width: calc(100vw - 10px);
+  max-width: 1280px;
+  top: 0;
+  left: 0;
+  z-index: 5;
 
   .container {
     margin: 0 0;
     padding: 0 0;
-    // max-width: 1200px;
     box-shadow: none;
+    max-width: 1280px;
   }
 
   .topbar {
     justify-content: flex-end;
-    padding: 0 0;
     height: 60px;
     color: $color-light;
   }
 }
 
+.price, .profile, {
+  width: 14%;
+}
+
+.notification, .exit {
+  width: 5%;
+}
+
 .price, .notification, .profile, .exit {
   border-left: solid 1px $color-light;
   border-right: solid 1px $color-light;
-  // align-items: center;
-  // text-align: center;
-  // justify-content: space-between;
   display: flex;
+  justify-content: center;
 }
 
 .topbar .link {

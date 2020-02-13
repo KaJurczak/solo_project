@@ -6,7 +6,6 @@
 
 .component__calendar {
   display: inline-flex;
-  padding-left: 60px;
 }
 
 .calendar .input-wrapper {
@@ -19,7 +18,7 @@
   align-items: center;
   text-align: center;
 
-  input {
+  input[type="date"]{
     border: 1px solid $color-light;
     height: 15px;
     font-size: $font-size;
@@ -56,7 +55,8 @@
 }
 
 .calendar .btn-refresh  {
-  margin-left: 0;
+  // margin-left: 0;
+  margin: 25px 0 25px 10px;
   height: 40px;
   width: 40px;
   padding-top: 10px;
@@ -66,25 +66,22 @@
   }
 }
 
-.component__calendar .btn {
-  margin: 25px 15px;
-}
-
 /* number - chart */
 
 .component__numbers .numbers-list {
-  margin: 10px auto;
+  margin: 15px auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 70%;
+  max-width: 75%;
   padding-left: 0;
   padding-top: 20px;
 }
 
 .component__numbers .item {
   width: 100%;
+  height: 45px;
   // flex: 1;
-  margin: 0 20px;
+  margin: 0 10px 0 55px;
 }
 
 .numbers-list .inner {
@@ -107,37 +104,37 @@
 }
 
 .chart {
-  max-width: 60%;
-  margin: 55px auto 0 auto;
+  width: 100%;
+  max-width: 65%;
+  margin: 60px auto 0 auto;
 
   h4 {
     text-align: left;
   }
 
   img {
-    margin: 30px 0;
+    margin: 30px 0 20px;
     width: 100%;
   }
 }
 
-.scroll-wrapper {
-  display: block;
-  width: 70%;
-  overflow-x: auto;
-
-  img {
-    width: auto;
-    max-width: 100%;
-  }
-}
-
+// .section__general-statistic .scroll-wrapper {
+//   display: block;
+//   width: 100%;
+//   overflow-x: auto;
+//
+//   img {
+//     width: 100%;
+//     // max-width: 100%;
+//   }
+// }
 
 /* Links */
 
-.scroll-wrapper {
-  // display: block;
+.section__links .scroll-wrapper {
+  display: block;
   // width: 70%;
-  // overflow-x: auto;
+  overflow-x: auto;
 
   table {
     width: 100%;
@@ -153,7 +150,11 @@
 
 .section__links .button-wrapper {
   text-align: center;
-  margin: 40px 0;
+  margin: 20px 0 20px;
+
+  .btn {
+    width: 120px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -162,8 +163,6 @@
   }
 
   .table-wrapper {
-    margin: 40px auto;
-    width: 70%;
-    padding: 5px;
+    width: 65%;
   }
 }
