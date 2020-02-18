@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+
 /* create function for humburger button */
 function toggleMenu(visible) {
   document.querySelector('.navigation').classList.toggle('show', visible);
