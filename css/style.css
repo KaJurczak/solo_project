@@ -1254,7 +1254,7 @@ i {
   text-align: left;
 }
 
-.chart img {
+.chart canvas {
   margin: 30px 0 20px;
   width: 100%;
 }
