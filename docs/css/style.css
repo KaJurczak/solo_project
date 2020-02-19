@@ -599,7 +599,7 @@ template {
 
 body {
   margin: 0 0;
-  padding: 0 20px;
+  padding: 0 0;
   max-width: 1250px;
   background: #ecf0f1;
   font-family: "Roboto", sans-serif;
@@ -714,7 +714,7 @@ ol li {
     display: none;
   }
   .main-page {
-    margin: 0 0 0 190px;
+    margin: 0 0 0 200px;
   }
 }
 
@@ -878,7 +878,7 @@ i {
 .section__sidebar {
   position: fixed;
   height: 100vh;
-  width: 190px;
+  width: 200px;
   background: #000000;
   color: #636e72;
   padding: 0 0;
@@ -887,7 +887,7 @@ i {
 
 .section__sidebar .container {
   background: #000000;
-  padding: 10px 0;
+  padding: 10px 0 10px 15px;
   box-shadow: none;
   margin: 0 auto;
   -ms-flex-align: center;
@@ -910,6 +910,7 @@ i {
 .logo h2 {
   font-family: "Ma Shan Zheng", cursive;
   font-size: 30px;
+  padding-right: 15%;
 }
 
 .logo-link i {
@@ -930,6 +931,18 @@ i {
 
 .list li a {
   padding-left: 20px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding: 10px 30% 5px 30%;
+}
+
+.manager-name,
+.section__topbar-at-sidebar .price a,
+.section__topbar-at-sidebar .profile a,
+.section__topbar-at-sidebar .notification a,
+.section__topbar-at-sidebar .exit a {
+  padding: 10px 30% 5px 30%;
 }
 
 .component__icon-text, .manager-name,
@@ -937,7 +950,6 @@ i {
 .section__topbar-at-sidebar .profile,
 .section__topbar-at-sidebar .notification,
 .section__topbar-at-sidebar .exit {
-  padding: 10px 30% 5px;
   text-align: left;
   -ms-flex-pack: start;
       justify-content: flex-start;
@@ -987,20 +999,38 @@ i {
   transition: all 0.2s;
 }
 
+.component__icon-text:hover a, .manager-name:hover a,
+.section__topbar-at-sidebar .price:hover a,
+.section__topbar-at-sidebar .profile:hover a,
+.section__topbar-at-sidebar .notification:hover a,
+.section__topbar-at-sidebar .exit:hover a {
+  padding-left: calc(30% - 5px);
+}
+
 .manager {
-  padding-left: 20px;
   padding-top: 5px;
 }
 
+.manager h4 {
+  padding-left: 30%;
+  margin-top: 40px;
+  text-align: left;
+}
+
 .manager .manager-name {
+  padding-left: 30%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   text-align: center;
   padding-top: 5px;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: left;
+      justify-content: left;
+}
+
+.manager .manager-name:hover {
+  padding-left: calc(30% - 5px);
 }
 
 .manager img {
@@ -1010,15 +1040,21 @@ i {
 
 .manager .manager-text {
   padding-left: 10px;
+  margin-bottom: 0;
 }
 
 .section__topbar-at-sidebar .container {
   margin-top: 30px;
+  padding: 0;
 }
 
 .section__topbar-at-sidebar .topbar {
   -ms-flex-pack: justify;
       justify-content: space-between;
+}
+
+.section__topbar-at-sidebar .price, .section__topbar-at-sidebar .notification, .section__topbar-at-sidebar .profile, .section__topbar-at-sidebar .exit {
+  border-left: none;
 }
 
 @media (max-width: 767px) {
@@ -1043,22 +1079,39 @@ i {
     -ms-flex-align: start;
         align-items: flex-start;
     text-align: left;
+    padding: 10px 0 10px 15px;
+  }
+  .section__sidebar .logo h2 {
+    padding-right: 2%;
   }
   .section__sidebar .manager .manager-name {
     -ms-flex-pack: start;
         justify-content: flex-start;
+  }
+  .manager h4 {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  .manager .manager-name {
+    padding-left: 20px;
+  }
+  .manager .manager-name:hover {
+    padding-left: 15px;
   }
   .section__sidebar .container {
     -ms-flex-align: start;
         align-items: flex-start;
     text-align: left;
   }
+  .list li a {
+    padding: 10px 10px 10px 15px;
+  }
   .component__icon-text, .manager-name,
   .section__topbar-at-sidebar .price,
   .section__topbar-at-sidebar .profile,
   .section__topbar-at-sidebar .notification,
   .section__topbar-at-sidebar .exit {
-    padding: 10px 10px 5px 0;
+    padding: 0;
   }
   .component__icon-text i, .component__icon-text a, .component__icon-text p, .manager-name i, .manager-name a, .manager-name p,
   .section__topbar-at-sidebar .price i,
@@ -1089,6 +1142,13 @@ i {
   .section__topbar-at-sidebar .exit:hover a,
   .section__topbar-at-sidebar .exit:hover p {
     font-size: 12.6px;
+  }
+  .component__icon-text:hover a, .manager-name:hover a,
+  .section__topbar-at-sidebar .price:hover a,
+  .section__topbar-at-sidebar .profile:hover a,
+  .section__topbar-at-sidebar .notification:hover a,
+  .section__topbar-at-sidebar .exit:hover a {
+    padding-left: 10px;
   }
 }
 

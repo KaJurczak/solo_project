@@ -1,7 +1,7 @@
 .section__sidebar {
   position: fixed;
   height: 100vh;
-  width: 190px;
+  width: 200px;
   background: $color-black;
   color: $color-dark;
   padding: 0 0;
@@ -9,7 +9,7 @@
 
   .container {
     background: $color-black;
-    padding: 10px 0;
+    padding: 10px 0 10px 15px;
     box-shadow: none;
     margin: 0 auto;
     align-items: center;
@@ -29,6 +29,7 @@
   h2 {
     font-family: $logo-font;
     font-size: 30px;
+    padding-right: 15%;
   }
 }
 
@@ -51,6 +52,18 @@
 .list li a {
   padding-left: 20px;
   // font-size: $font-size*0.9;
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding: 10px 30% 5px 30%;
+}
+
+.manager-name,
+.section__topbar-at-sidebar .price a,
+.section__topbar-at-sidebar .profile a,
+.section__topbar-at-sidebar .notification a,
+.section__topbar-at-sidebar .exit a {
+  padding: 10px 30% 5px 30%;
 }
 
 .component__icon-text, .manager-name,
@@ -58,7 +71,6 @@
 .section__topbar-at-sidebar .profile,
 .section__topbar-at-sidebar .notification,
 .section__topbar-at-sidebar .exit {
-  padding: 10px 30% 5px;
   text-align: left;
   justify-content: flex-start;
 
@@ -75,21 +87,34 @@
       color: $color-light;
       font-size: $font-size*1.2;
       transition: $transition;
-      // padding-left: 8px;
+    }
+
+    a {
+      padding-left: calc(30% - 5px);
     }
   }
 }
 
 .manager {
-  padding-left: 20px;
   padding-top: 5px;
 
+  h4 {
+    padding-left: 30%;
+    margin-top: 40px;
+    text-align: left;
+  }
+
   .manager-name {
+    padding-left: 30%;
     display: flex;
     align-items: center;
     text-align: center;
     padding-top: 5px;
-    justify-content: center;
+    justify-content: left;
+
+    &:hover {
+      padding-left: calc(30% - 5px);
+    }
   }
 
   img {
@@ -99,16 +124,22 @@
 
   .manager-text {
     padding-left: 10px;
+    margin-bottom: 0;
   }
 }
 
 .section__topbar-at-sidebar {
   .container {
     margin-top: 30px;
+    padding: 0;
   }
 
   .topbar {
     justify-content: space-between;
+  }
+
+  .price, .notification, .profile, .exit {
+    border-left: none;
   }
 }
 
@@ -139,10 +170,32 @@
     .container {
       align-items: flex-start;
       text-align: left;
+      padding: 10px 0 10px 15px;
+    }
+
+    .logo {
+      h2 {
+        padding-right: 2%;
+      }
     }
 
     .manager .manager-name {
       justify-content: flex-start;
+    }
+  }
+
+  .manager {
+    h4 {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .manager-name {
+      padding-left: 20px;
+
+      &:hover {
+        padding-left: 15px;
+      }
     }
   }
 
@@ -151,12 +204,16 @@
     text-align: left;
   }
 
+  .list li a {
+    padding: 10px 10px 10px 15px;
+  }
+
   .component__icon-text, .manager-name,
   .section__topbar-at-sidebar .price,
   .section__topbar-at-sidebar .profile,
   .section__topbar-at-sidebar .notification,
   .section__topbar-at-sidebar .exit {
-    padding: 10px 10px 5px 0;
+    padding: 0;
 
     i, a, p {
       font-size: $font-size*0.9;
@@ -166,6 +223,10 @@
       i, a, p {
         font-size: $font-size*0.9;
       }
+    }
+
+    &:hover a {
+      padding-left: 10px;
     }
   }
 }
