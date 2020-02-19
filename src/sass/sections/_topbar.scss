@@ -5,7 +5,7 @@
   padding: 0 0;
   background: $color-white;
   width: calc(100vw - 10px);
-  max-width: 1280px;
+  // max-width: 1280px;
   top: 0;
   left: 0;
   z-index: 5;
@@ -14,7 +14,7 @@
     margin: 0 0;
     padding: 0 0;
     box-shadow: none;
-    max-width: 1280px;
+    max-width: 100%;
     width: 100%;
   }
 
@@ -26,11 +26,11 @@
 }
 
 .price, .profile, {
-  width: 14%;
+  width: 200px;
 }
 
 .notification, .exit {
-  width: 5%;
+  width: 70px;
 }
 
 .price, .notification, .profile, .exit {

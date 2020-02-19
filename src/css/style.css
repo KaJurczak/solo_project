@@ -854,8 +854,8 @@ i {
 }
 
 .modal {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 300px;
+  max-height: 300px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
@@ -1088,7 +1088,7 @@ i {
   .section__topbar-at-sidebar .exit:hover i,
   .section__topbar-at-sidebar .exit:hover a,
   .section__topbar-at-sidebar .exit:hover p {
-    font-size: 15.4px;
+    font-size: 12.6px;
   }
 }
 
@@ -1098,7 +1098,6 @@ i {
   padding: 0 0;
   background: #FFFFFF;
   width: calc(100vw - 10px);
-  max-width: 1280px;
   top: 0;
   left: 0;
   z-index: 5;
@@ -1108,7 +1107,7 @@ i {
   margin: 0 0;
   padding: 0 0;
   box-shadow: none;
-  max-width: 1280px;
+  max-width: 100%;
   width: 100%;
 }
 
@@ -1120,11 +1119,11 @@ i {
 }
 
 .price, .profile {
-  width: 14%;
+  width: 200px;
 }
 
 .notification, .exit {
-  width: 5%;
+  width: 70px;
 }
 
 .price, .notification, .profile, .exit {

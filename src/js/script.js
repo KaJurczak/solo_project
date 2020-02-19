@@ -5,6 +5,8 @@ import {select, classNames} from './settings.js';
 
 /* create function for humburger button */
 const app = {
+
+  /* HAMBURGER */
   initHamburger: function(){
     function toggleMenu(visible){
       document.querySelector('.navigation').classList.toggle('show', visible);
@@ -17,9 +19,11 @@ const app = {
       console.log('toggleMenu()');
       toggleMenu();
     });
+  },
 
-    /* MODALS */
-    /* remove class "show" from modal */
+  /* MODALS */
+  /* remove class "show" from modal */
+  shutModal: function(){
     function closeModal() {
       document.getElementById('overlay').classList.remove('show');
     }
@@ -47,19 +51,17 @@ const app = {
         console.log('closeModal() - esc');
         closeModal();
       }
-    }),
+    });
+  },
 
-    /* close all modals, than open our modal and overlay  */
-    function openModal(modal) {
-      document.querySelectorAll('#overlay > *').forEach(function(modal) {
-        modal.classList.remove('show');
-      });
-      document.querySelector('#overlay').classList.add('show');
-      document.querySelector(modal).classList.add('show');
-      console.log('openModal()');
-    };
-
-    // openModal('#myModal');
+  /* close all modals, than open our modal and overlay  */
+  openModal: function(modal) {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+      modal.classList.remove('show');
+    });
+    document.querySelector('#overlay').classList.add('show');
+    document.querySelector(modal).classList.add('show');
+    console.log('openModal()');
   },
 
   /* CHART */
@@ -157,6 +159,8 @@ const app = {
     thisApp.initHamburger();
     thisApp.createChart();
     thisApp.initPages();
+    thisApp.shutModal();
+    thisApp.openModal('#myModal');
   },
 };
 
