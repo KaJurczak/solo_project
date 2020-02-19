@@ -33,37 +33,37 @@
                   </a>
                 </li>
                 <li class="component__icon-text">
-                  <a class="link" href="#general">
+                  <a class="link" href="#details">
                     <i class="icon icon-details"></i>
                     Details
                   </a>
                 </li>
                 <li class="component__icon-text">
-                  <a class="link" href="#general">
+                  <a class="link" href="#links">
                     <i class="icon icon-links"></i>
                     Links
                   </a>
                 </li>
                 <li class="component__icon-text">
-                  <a class="link" href="#general">
+                  <a class="link" href="#banners">
                     <i class="icon icon-banners"></i>
                     Banners
                   </a>
                 </li>
                 <li class="component__icon-text">
-                  <a class="link" href="#general">
+                  <a class="link" href="#personaldata">
                     <i class="icon icon-personaldata"></i>
                     Personal data
                   </a>
                 </li>
                 <li class="component__icon-text">
-                  <a class="link" href="#general">
+                  <a class="link" href="#payout">
                     <i class="icon icon-payout"></i>
                     Payout
                   </a>
                 </li>
                 <li class="component__icon-text">
-                  <a class="link" href="#general">
+                  <a class="link" href="#postback">
                     <i class="icon icon-postback"></i>
                     Postback
                   </a>
@@ -111,7 +111,7 @@
           </div>
         </section>
 
-        <div class="main-page">
+        <div id="main-page" class="main-page">
           <header class="section__topbar">
             <div class="container">
               <div class="topbar row">
@@ -142,214 +142,314 @@
             </div>
           </header>
 
-          <section class="section__general-statistic">
-            <div class="container">
-              <div class="component__title">
-                <h3> GENERAL STATISTIC </h3>
-              </div>
-              <div class="component__section-part calendar">
-                <form class="component__calendar">
-                   <div class="calendar input-wrapper">
-                     <input class="calendar input" type="date" value="2016-05-16">
-                     <input class="calendar input" type="date" value="2016-05-16">
-                     <div class="calendar icon-wrapper"><i class="icon icon-calendar"></i></div>
-                   </div>
-                   <a class="calendar btn btn-refresh"><i class="icon-refresh"></i></a>
-                 </form>
-              </div>
-              <form class="component__numbers">
-                <ul class="numbers-list">
-                  <li class="item">
-                    <div class="inner">
-                      <h4>Visit signups</h4>
-                      <div class="inner-wrapper">
-                        <input class="inner-input" type="text" value="124">
+          <div id="pages" class="pages">
+            <section id="general" class="section__general-statistic">
+              <div class="container">
+                <div class="component__title">
+                  <h3> GENERAL STATISTIC </h3>
+                </div>
+                <div class="component__section-part calendar">
+                  <form class="component__calendar">
+                     <div class="calendar input-wrapper">
+                       <input class="calendar input" type="date" value="2016-05-16">
+                       <input class="calendar input" type="date" value="2016-05-16">
+                       <div class="calendar icon-wrapper"><i class="icon icon-calendar"></i></div>
+                     </div>
+                     <a class="calendar btn btn-refresh"><i class="icon-refresh"></i></a>
+                   </form>
+                </div>
+                <form class="component__numbers">
+                  <ul class="numbers-list">
+                    <li class="item">
+                      <div class="inner">
+                        <h4>Visit signups</h4>
+                        <div class="inner-wrapper">
+                          <input class="inner-input" type="text" value="124">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="inner">
-                      <h4>Net deposit</h4>
-                      <div class="inner-wrapper">
-                        <input class="inner-input" type="text" value="564">
+                    </li>
+                    <li class="item">
+                      <div class="inner">
+                        <h4>Net deposit</h4>
+                        <div class="inner-wrapper">
+                          <input class="inner-input" type="text" value="564">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="inner">
-                      <h4>FTD</h4>
-                      <div class="inner-wrapper">
-                        <input class="inner-input" type="text" value="445">
+                    </li>
+                    <li class="item">
+                      <div class="inner">
+                        <h4>FTD</h4>
+                        <div class="inner-wrapper">
+                          <input class="inner-input" type="text" value="445">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="inner">
-                      <h4>Turn over</h4>
-                      <div class="inner-wrapper">
-                        <input class="inner-input" type="text" value="432">
+                    </li>
+                    <li class="item">
+                      <div class="inner">
+                        <h4>Turn over</h4>
+                        <div class="inner-wrapper">
+                          <input class="inner-input" type="text" value="432">
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
-              </form>
-              <div class="chart scroll-wrapper">
-                <h4>Earnings chart</h4>
-                <!-- <img src="images/chart.jpg" alt="chart" title="chart"> -->
-                <canvas id="myChart"></canvas>
+                    </li>
+                  </ul>
+                </form>
+                <div class="chart scroll-wrapper">
+                  <h4>Earnings chart</h4>
+                  <!-- <img src="images/chart.jpg" alt="chart" title="chart"> -->
+                  <canvas id="myChart"></canvas>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <section class="section__links">
-            <div class="container">
-              <div class="component__title">
-                <h3> LINKS </h3>
+            <section id="links" class="section__links">
+              <div class="container">
+                <div class="component__title">
+                  <h3> LINKS </h3>
+                </div>
+                <div class="button-wrapper">
+                  <a class="btn btn-primary" href="#">+ add new</a>
+                </div>
+                <div class="table-wrapper scroll-wrapper">
+                  <table class="links-table">
+                    <tbody>
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Home page</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.homepage.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Currently offer</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.currently.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Blurpix</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.blurpix.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Your Site</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.yoursitee.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Google</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.google.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Facebook</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.facebook.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Dashboard</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.dashboard.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Blurax</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.blurax.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Piece od wine</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.pieceofwine.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Twitter</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.twitter.com</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+                <div class="button-wrapper">
+                  <a class="btn btn-primary" href="#">+ add new</a>
+                </div>
               </div>
-              <div class="button-wrapper">
-                <a class="btn btn-primary" href="#">+ add new</a>
+            </section>
+
+            <section id="banners" class="section__banners">
+              <div class="container">
+                <div class="component__title">
+                  <h3> BANNERS </h3>
+                </div>
+                <div class="button-wrapper">
+                  <a class="btn btn-primary" href="#">+ add new</a>
+                </div>
+                <div class="table-wrapper scroll-wrapper">
+                  <table class="links-table">
+                    <tbody>
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Banner main</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.website.com/bannermain.gif</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Sign up banner</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.website.com/signup.gif</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Banner left side</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.website.com/leftside.gif</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Vertical banner</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.website.com/vert.gif</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Front banner</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.website.com/front.gif</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr class="component__table-row">
+                        <td class="table-text">
+                          <h4>Horizontal banner</h4>
+                        </td>
+                        <td class="table-link">
+                          <a href="#">http://www.website.com/horizontal.gif</a>
+                        </td>
+                        <td class="table-font">
+                          <a href="#"><i class="icon-links"></i></a>
+                          <a href="#"><i class="icon-trash"></i></a>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+                <div class="button-wrapper">
+                  <a class="btn btn-primary" href="#">+ add new</a>
+                </div>
               </div>
-              <div class="table-wrapper scroll-wrapper">
-                <table class="links-table">
-                  <tbody>
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Home page</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.homepage.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Currently offer</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.currently.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Blurpix</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.blurpix.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Your Site</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.yoursitee.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Google</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.google.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Facebook</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.facebook.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Dashboard</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.dashboard.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Blurax</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.blurax.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Piece od wine</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.pieceofwine.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                    <tr class="component__table-row">
-                      <td class="table-text">
-                        <h4>Twitter</h4>
-                      </td>
-                      <td class="table-link">
-                        <a href="#">http://www.twitter.com</a>
-                      </td>
-                      <td class="table-font">
-                        <a href="#"><i class="icon-links"></i></a>
-                        <a href="#"><i class="icon-trash"></i></a>
-                      </td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
-              <div class="button-wrapper">
-                <a class="btn btn-primary" href="#">+ add new</a>
-              </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
 
         <div class="overlay" id="overlay">
@@ -372,6 +472,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>

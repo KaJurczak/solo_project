@@ -1,7 +1,16 @@
-.section__general-statistic {
+/* ALL PAGES ELEMENTS */
+
+.section__general-statistic,
+.section__links,
+.section__banners {
   margin-top: 80px;
+
+  .container {
+    // width: 100%;
+  }
 }
 
+/* GENERAL */
 /* calendar */
 
 .component__calendar {
@@ -129,7 +138,7 @@
 //   }
 // }
 
-/* Links */
+/* LINKS */
 
 .section__links .scroll-wrapper {
   display: block;
@@ -148,7 +157,10 @@
   padding: 5px;
 }
 
-.section__links .button-wrapper {
+/* LINKS, BANNERS */
+
+.section__links .button-wrapper,
+.section__banners .button-wrapper {
   text-align: center;
   margin: 20px 0 20px;
 
