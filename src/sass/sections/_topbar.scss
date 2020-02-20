@@ -4,7 +4,7 @@
   margin: 0 0;
   padding: 0 0;
   background: $color-white;
-  width: calc(100vw - 10px);
+  width: 100vw;
   // max-width: 1280px;
   top: 0;
   left: 0;
@@ -22,6 +22,10 @@
     justify-content: flex-end;
     height: 60px;
     color: $color-light;
+  }
+
+  .row {
+
   }
 }
 
@@ -63,4 +67,10 @@
 
 .profile p {
   color: $color-blue;
+}
+
+@media (min-width: 1200px) {
+  .section__topbar {
+    width: 100vw;
+  }
 }

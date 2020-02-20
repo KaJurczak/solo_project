@@ -1059,7 +1059,7 @@ i {
 
 @media (max-width: 767px) {
   .section__sidebar {
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
   .section__sidebar .navigation, .section__sidebar .manager, .section__sidebar .section__topbar-at-sidebar {
@@ -1082,7 +1082,7 @@ i {
     padding: 10px 0 10px 15px;
   }
   .section__sidebar .logo h2 {
-    padding-right: 2%;
+    padding-right: 1%;
   }
   .section__sidebar .manager .manager-name {
     -ms-flex-pack: start;

@@ -877,7 +877,7 @@ i {
 /* Sections */
 .section__sidebar {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 200px;
   background: #000000;
   color: #636e72;
@@ -1059,7 +1059,7 @@ i {
 
 @media (max-width: 767px) {
   .section__sidebar {
-    width: 100%;
+    width: calc(100% + 15px);
     height: auto;
   }
   .section__sidebar .navigation, .section__sidebar .manager, .section__sidebar .section__topbar-at-sidebar {
@@ -1082,7 +1082,7 @@ i {
     padding: 10px 0 10px 15px;
   }
   .section__sidebar .logo h2 {
-    padding-right: 2%;
+    padding-right: 1%;
   }
   .section__sidebar .manager .manager-name {
     -ms-flex-pack: start;
@@ -1157,7 +1157,7 @@ i {
   margin: 0 0;
   padding: 0 0;
   background: #FFFFFF;
-  width: calc(100vw - 10px);
+  width: 100vw;
   top: 0;
   left: 0;
   z-index: 5;
@@ -1219,6 +1219,12 @@ i {
 
 .profile p {
   color: #2980b9;
+}
+
+@media (min-width: 1200px) {
+  .section__topbar {
+    width: 100vw;
+  }
 }
 
 /* ALL PAGES ELEMENTS */

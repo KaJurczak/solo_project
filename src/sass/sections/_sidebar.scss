@@ -1,6 +1,6 @@
 .section__sidebar {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 200px;
   background: $color-black;
   color: $color-dark;
@@ -145,7 +145,7 @@
 
 @media (max-width: 767px) {
   .section__sidebar {
-    width: 100%;
+    width: calc(100% + 15px); //łatka naklejona ze względu na padding row -15px
     height: auto;
 
     .navigation, .manager, .section__topbar-at-sidebar {
@@ -175,7 +175,7 @@
 
     .logo {
       h2 {
-        padding-right: 2%;
+        padding-right: 1%;
       }
     }
 
