@@ -1159,7 +1159,7 @@ i {
   background: #FFFFFF;
   width: 100vw;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 5;
 }
 
@@ -1182,8 +1182,12 @@ i {
   width: 200px;
 }
 
-.notification, .exit {
+.notification {
   width: 70px;
+}
+
+.exit {
+  width: 80px;
 }
 
 .price, .notification, .profile, .exit {
@@ -1209,10 +1213,6 @@ i {
   margin-bottom: 0;
 }
 
-.topbar .link i {
-  padding: 0 10px;
-}
-
 .price p {
   font-size: 19.6px;
 }
@@ -1221,10 +1221,12 @@ i {
   color: #2980b9;
 }
 
-@media (min-width: 1200px) {
-  .section__topbar {
-    width: 100vw;
-  }
+.topbar .link .price i, .topbar .link .notification i, .topbar .link .profile i {
+  padding: 0 10px;
+}
+
+.exit i {
+  padding-right: 10px;
 }
 
 /* ALL PAGES ELEMENTS */

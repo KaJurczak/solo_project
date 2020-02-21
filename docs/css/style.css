@@ -877,7 +877,7 @@ i {
 /* Sections */
 .section__sidebar {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 200px;
   background: #000000;
   color: #636e72;
@@ -1059,7 +1059,7 @@ i {
 
 @media (max-width: 767px) {
   .section__sidebar {
-    width: 100vw;
+    width: calc(100% + 15px);
     height: auto;
   }
   .section__sidebar .navigation, .section__sidebar .manager, .section__sidebar .section__topbar-at-sidebar {
@@ -1157,9 +1157,9 @@ i {
   margin: 0 0;
   padding: 0 0;
   background: #FFFFFF;
-  width: calc(100vw - 10px);
+  width: 100vw;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 5;
 }
 
@@ -1182,8 +1182,12 @@ i {
   width: 200px;
 }
 
-.notification, .exit {
+.notification {
   width: 70px;
+}
+
+.exit {
+  width: 80px;
 }
 
 .price, .notification, .profile, .exit {
@@ -1209,16 +1213,20 @@ i {
   margin-bottom: 0;
 }
 
-.topbar .link i {
-  padding: 0 10px;
-}
-
 .price p {
   font-size: 19.6px;
 }
 
 .profile p {
   color: #2980b9;
+}
+
+.topbar .link .price i, .topbar .link .notification i, .topbar .link .profile i {
+  padding: 0 10px;
+}
+
+.exit i {
+  padding-right: 10px;
 }
 
 /* ALL PAGES ELEMENTS */

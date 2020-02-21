@@ -7,7 +7,7 @@
   width: 100vw;
   // max-width: 1280px;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 5;
 
   .container {
@@ -23,18 +23,18 @@
     height: 60px;
     color: $color-light;
   }
-
-  .row {
-
-  }
 }
 
 .price, .profile, {
   width: 200px;
 }
 
-.notification, .exit {
+.notification {
   width: 70px;
+}
+
+.exit {
+  width: 80px;
 }
 
 .price, .notification, .profile, .exit {
@@ -55,10 +55,6 @@
   p {
     margin-bottom: 0;
   }
-
-  i {
-    padding: 0 10px;
-  }
 }
 
 .price p {
@@ -69,8 +65,22 @@
   color: $color-blue;
 }
 
-@media (min-width: 1200px) {
-  .section__topbar {
-    width: 100vw;
+.topbar .link {
+  .price, .notification, .profile {
+    i {
+      padding: 0 10px;
+    }
   }
 }
+
+.exit i {
+  padding-right: 10px;
+}
+
+
+//
+// @media (min-width: 1200px) {
+//   .section__topbar {
+//     width: 100vw;
+//   }
+// }
