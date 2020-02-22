@@ -16,7 +16,7 @@ const app = {
 
     document.querySelector('.logo-link').addEventListener('click', function(e) {
       e.preventDefault();
-      console.log('toggleMenu()');
+      // console.log('toggleMenu()');
       toggleMenu();
     });
   },
@@ -32,7 +32,7 @@ const app = {
     document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         e.preventDefault();
-        console.log('closeModal() - btn');
+        // console.log('closeModal() - btn');
         closeModal();
       });
     });
@@ -40,7 +40,7 @@ const app = {
     /* remove class "show" after clicking at overlay  */
     document.querySelector('#overlay').addEventListener('click', function(e) {
       if(e.target === this) {
-        console.log('closeModal() - overlay');
+        // console.log('closeModal() - overlay');
         closeModal();
       }
     });
@@ -48,7 +48,7 @@ const app = {
     /* remove class "show" after clicking at escape  */
     document.addEventListener('keyup', function(e) {
       if(e.keyCode === 27) {
-        console.log('closeModal() - esc');
+        // console.log('closeModal() - esc');
         closeModal();
       }
     });
@@ -61,14 +61,14 @@ const app = {
     });
     document.querySelector('#overlay').classList.add('show');
     document.querySelector(modal).classList.add('show');
-    console.log('openModal()');
+    // console.log('openModal()');
   },
 
   /* CHART */
   /* Find canva's element and get context?? */
   createChart: function(){
     const ctx = document.getElementById('myChart').getContext('2d');
-    console.log('ctx was create:', ctx);
+    // console.log('ctx was create:', ctx);
 
     /* chart configuration */
     const chart = new Chart(ctx, {
@@ -96,7 +96,7 @@ const app = {
         }],
       },
     });
-    console.log('chart was create');
+    // console.log('chart was create');
   },
 
   /* PAGES */
@@ -118,7 +118,7 @@ const app = {
       }
     }
 
-    //console.log('pageMatchingHash', pageMatchingHash);
+    // console.log('pageMatchingHash', pageMatchingHash);
     thisApp.activatePage(pageMatchingHash);
 
     for(let link of thisApp.navLinks){
